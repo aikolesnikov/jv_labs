@@ -2,7 +2,7 @@ class Toy1 {
     int t1;
 }
 
-class Toy2 extends Toy1{
+class Toy2 extends Toy1 {
     int t1;
 }
 
@@ -24,9 +24,6 @@ public class Toy_3_Hash {
         System.out.println(obj1 instanceof Object);
         System.out.println(toy2_1 instanceof Toy1);
         System.out.println(toy2_1 instanceof Toy2);
-
-
-
 
 
 //        toy1.t1 = 1;
