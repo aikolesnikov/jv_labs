@@ -1,5 +1,6 @@
 class Toy1 {
     int t1;
+
 }
 
 class Toy2 extends Toy1 {
