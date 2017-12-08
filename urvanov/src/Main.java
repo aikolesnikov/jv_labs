@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import static java.lang.Float.MAX_VALUE;
 import static java.lang.Float.NaN;
 import static java.lang.Float.POSITIVE_INFINITY;
@@ -75,6 +77,32 @@ public class Main {
         System.out.println(Double.TYPE + " default " + doubleVal1 + " " + "min " + Double.MIN_VALUE + " max " + Double.MAX_VALUE);
         System.out.println(Boolean.TYPE + " default " + booleanVal1 + " " + "min " + Boolean.FALSE + " max " + Boolean.TRUE);
         System.out.println(Character.TYPE + " default " + charVal1 + " " + "min " + Character.MIN_VALUE + " max " + Character.MAX_VALUE);
+        System.out.println();
+
+        Object[] myObjArr = {null, new Object(), "abc", 123};
+        int[] intArr = {1, 2, 3};
+        int intArr1[] = {4, 5, 6};
+
+        double dblArr1[] = new double[]{7.8, 9, 10};
+        int intArr2[][] = {
+                {1, 2, 3},
+                {4, 5, 6}
+        };
+        int intArr3[][][] = {
+                {{2, 3, 4}, {}, {2, 3, 4}},
+                {{16}, {2, 3, 4}, {2, 3, 4, 7, 6, 19}}
+        };
+        System.out.println(myObjArr[0] + " " + intArr1[1] + " " + dblArr1[2] + " " + intArr2[0][2] + " " + intArr3[1][2][1]);
+
+        System.arraycopy(intArr1, 0, intArr, 2, 1);
+        for (int i : intArr) System.out.print(i + " ");
+        System.out.println();
+        System.out.println(Arrays.toString(intArr));
+        System.out.println();
+
+
+        Object obj1 = new Object();
+        System.out.println(obj1.toString());
 
     }
 }
