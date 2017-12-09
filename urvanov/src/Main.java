@@ -48,9 +48,61 @@ public class Main {
     static boolean booleanVal1;          // true, false
     static char charVal1;             // 2 bytes
 
+    //---------------
+    //---  Operations
+    //---------------
+
+    static int intOp1;
+
+    static {
+        System.out.println(intOp1 = integerVar1 = 1);
+        longVar1 = (intOp1 * intOp1) > 0 ? 100 : 200;
+
+        boolean boolOp2 = (
+                (((++intOp1 + 1 - 2) / 3 * 4 % 5) > 0) && (longVar1 < shortVar1)
+                        && (iArr instanceof Object)
+        );
+        int intOp3 = ~integerVar1 << 1 >> 2 >>> 3 & 4 | 5 ^ 6;
+        intOp3 += intOp1;
+
+        System.out.println("from static");
+
+        if (boolOp2 == true) {
+            System.out.println("true");
+        } else if (intOp3 > 0) {
+            System.out.println();
+        }
+
+
+        switch (intOp1) {     // byte , short , char , int , enum, String, Byte, Short, Character, Integer
+            case 1:
+                System.out.println(1);
+                System.out.println(1_1);
+                break;
+            case 2:
+                System.out.println(2);
+                break;
+            default:
+                System.out.println("default");
+                break;
+        }
+    }
+
+/*
+
+Группа операций	Приоритет
+Группировка	( ... ) Доступ к члену	... . ... постфиксные	expr++ expr-- унарные	++expr --expr +expr -expr ~ !
+мультипликативные	* / % аддитивные	+ - сдвиги	<< >> >>> сравнения	< > <= >= instanceof
+равенства	== != бинарный И	& бинарный исключающее ИЛИ	^ бинарный ИЛИ	| логический И	&& логический ИЛИ	||
+тернарный	? : лямбда	-> присваивания	= += -= *= /= %= &= ^= |= <<= >>= >>>=
+*/
+
 
     public static void main(String[] args) {
 
+
+        System.out.println();
+        System.out.println("From main");
         // Literals
         for (int i : iArr) System.out.println(i);
         for (long l : lArr) System.out.println(l);
