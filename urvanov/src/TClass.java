@@ -47,6 +47,13 @@ public class TClass {
         System.out.println("by " + this.h + " " + tymes + " tymes");
     }
 
+    private void yob(int tymes, String... options) {
+        System.out.print(tymes + " tymes" + " by: ");
+        for (String s : options) {
+            System.out.print(s);
+        }
+        System.out.println();
+    }
 
     public static void main(String[] args) {
         TClass bogatyr = new TClass(3);
@@ -56,6 +63,8 @@ public class TClass {
 
         new TClass().greetEveryOne("EEEEy"); // it works but .. ?
         TClass.greetEveryOne();  // it might be better
+
+        bogatyr.yob(3,"good, ", "awesone, ", "back, ", "strong.");
     }
 
 }
