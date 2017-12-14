@@ -1,7 +1,8 @@
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class Jv_31_BigInteger {
+public class Jv_31_BigNumber2_BigInteger {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
