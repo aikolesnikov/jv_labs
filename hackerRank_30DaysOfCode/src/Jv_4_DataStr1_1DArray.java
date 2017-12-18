@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_4_DataStr_1DArray {
+public class Jv_4_DataStr1_1DArray {
 
 
 
