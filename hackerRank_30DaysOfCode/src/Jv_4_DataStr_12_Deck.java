@@ -17,19 +17,24 @@ public class Jv_4_DataStr_12_Deck {
         }
 
 
-        // ??? deque.toArray().
+        Object[] ar = deque.toArray();
+        int tSum = 0;
         for (int i = 0; i <= n - m; i++) {
             HashSet<Integer> hs = new HashSet<>();
-
             for (int j = 0; j < m; j++) {
-                hs.add((Integer) deque.peek());
+                hs.add(((Integer) ar[i + j]));
             }
-            System.out.println(deque.poll());
-            System.out.println(hs.size());
-            System.out.println();
+            if (hs.size() > tSum)
+                tSum = hs.size();
+
+//            for (int j = 0; j < m; j++) {
+//                System.out.println(((Integer) ar[i + j]) + " ");
+//            }
+//            System.out.println();
+
         }
 
+        System.out.println(tSum);
 
-        // for (Object i: deque) System.out.println(((Integer) i).intValue());
     }
 }
