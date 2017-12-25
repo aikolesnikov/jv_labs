@@ -9,14 +9,14 @@ public class Jv_12_DateAndTime {
     private static String getDay(String day, String month, String year) {
 
         // by LocalDate
-        LocalDate dt = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
-        return dt.getDayOfWeek().name();
+        // LocalDate dt = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
+        // return dt.getDayOfWeek().name();
 
         // by Calendar
-        // Calendar cDate = Calendar.getInstance();
-        // cDate.set(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
+        Calendar cDate = Calendar.getInstance();
+        cDate.set(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
 
-        // return cDate.getDisplayName(Calendar.DAY_OF_WEEK, 2, Locale.getDefault()).toUpperCase();
+        return cDate.getDisplayName(Calendar.DAY_OF_WEEK, 2, Locale.getDefault()).toUpperCase();
 
     }
 
@@ -28,7 +28,7 @@ public class Jv_12_DateAndTime {
         // String year = in.next();
 
         // System.out.println(getDay(day, month, year));
-        System.out.println(getDay("5", "8", "2015"));
+        System.out.println(getDay("5", "7", "2015"));
 
     }
 
