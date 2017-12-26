@@ -55,20 +55,20 @@ public class Jv_72_Reflection {
 /*
        // The following blocks is EXTRA exercise.
 
-       // Getting and Printing the list of constructors Student class
-       Constructor<Student>[] constructsOfStudent = student.getConstructors();
+       // Getting and Printing the list of constructors Student3 class
+       Constructor<Student3>[] constructsOfStudent = student.getConstructors();
        if (constructsOfStudent.length != 0){
-           System.out.println("Constructs of Student");
+           System.out.println("Constructs of Student3");
            for (Constructor c : constructsOfStudent){
                System.out.println(c.toGenericString());
            }
        }
        else System.out.println("No constructors in " + student.getSimpleName() + "class");
 
-       // Getting and Printing the Fields of Student class
+       // Getting and Printing the Fields of Student3 class
        Field[] fields = student.getFields();
        if (fields.length != 0){
-          System.out.println("List of fields in Student class");
+          System.out.println("List of fields in Student3 class");
              for (Field f : fields){
                  System.out.println(f.toGenericString());
              }
