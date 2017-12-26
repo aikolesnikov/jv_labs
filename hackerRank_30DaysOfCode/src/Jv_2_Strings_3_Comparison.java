@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_2_Strings_Comparison {
+public class Jv_2_Strings_3_Comparison {
 
     private static String getSmallestAndLargest(String s, int k) {
         String smallest = "";

@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Jv_8_Datatypes {
+public class Day8_Datatypes {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

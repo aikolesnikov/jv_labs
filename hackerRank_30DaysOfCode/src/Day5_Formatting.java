@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_5_Formatting {
+public class Day5_Formatting {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

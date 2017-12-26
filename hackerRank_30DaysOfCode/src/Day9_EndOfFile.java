@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_9_EndOfFile {
+public class Day9_EndOfFile {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_10_StaticInitializer {
+public class Day10_StaticInitializer {
 
     private static boolean flag;
     private static int B, H;

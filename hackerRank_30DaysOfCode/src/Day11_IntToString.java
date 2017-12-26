@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_11_IntToString {
+public class Day11_IntToString {
 
     public static void main(String[] args) {
 

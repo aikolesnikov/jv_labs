@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class Jv_2_String_Anagrams {
+public class Jv_2_Strings_5_Anagrams {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function

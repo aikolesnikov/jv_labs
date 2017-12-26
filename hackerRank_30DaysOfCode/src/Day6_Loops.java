@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_6_Loops {
+public class Day6_Loops {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

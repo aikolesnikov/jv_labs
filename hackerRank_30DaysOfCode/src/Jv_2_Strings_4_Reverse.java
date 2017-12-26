@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_2_StringsReverse {
+public class Jv_2_Strings_4_Reverse {
 
     public static void main(String[] args) {
 

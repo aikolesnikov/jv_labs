@@ -4,7 +4,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Jv_12_DateAndTime {
+public class Day12_DateAndTime {
 
     private static String getDay(String day, String month, String year) {
 
