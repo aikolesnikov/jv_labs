@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jv_Algo_2_Implementation_11 {
+public class Jv_Algo_4_Sorting_1 {
 
     static int bonAppetit(int n, int k, int b, int[] ar) {
         // Complete this function
