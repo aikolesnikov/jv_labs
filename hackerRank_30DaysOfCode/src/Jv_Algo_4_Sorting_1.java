@@ -1,40 +1,52 @@
+import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Jv_Algo_4_Sorting_1 {
 
-    static int bonAppetit(int n, int k, int b, int[] ar) {
+
+
+/*
+  -- LongTime solution
+  static String[] bigSorting(String[] arr) {
         // Complete this function
-        int res = 0;
 
-        int sWith = 0;
-        int sWithout = 0;
-        for (int i = 0; i < ar.length; i++) {
-            sWith += ar[i];
+        String[] tStringAr = new String[arr.length];
+
+        BigInteger[] iAr = new BigInteger[arr.length];
+        for (int i = 0; i < iAr.length; i++) {
+            iAr[i] = new BigInteger(arr[i]);
         }
-        sWithout = sWith - ar[k];
 
-        return b - sWithout / 2;
+        Arrays.sort(iAr);
+
+        for (int i = 0; i < tStringAr.length; i++) {
+            tStringAr[i] = iAr[i].toString();
+        }
+
+        // return new String[]{"31415926535897932384626433832795", "1", "3", "10", "3", "5"};
+        return tStringAr;
     }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        int k = in.nextInt();
-        int[] ar = new int[n];
-        for (int ar_i = 0; ar_i < n; ar_i++) {
-            ar[ar_i] = in.nextInt();
+        String[] arr = new String[n];
+        for(int arr_i = 0; arr_i < n; arr_i++){
+            arr[arr_i] = in.next();
         }
-        int b = in.nextInt();
-        int result = bonAppetit(n, k, b, ar);
-
-        if (bonAppetit(n, k, b, ar) == 0)
-            System.out.println("Bon Appetit");
-        else {
-            System.out.println(result);
+        String[] result = bigSorting(arr);
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + (i != result.length - 1 ? "\n" : ""));
         }
+        System.out.println("");
 
-        // assert (bonAppetit(4, 1, 12, new int[]{3, 10, 2, 9}) == 5);
-        // assert (bonAppetit(4, 1, 7, new int[]{3, 10, 2, 9}) == 0);
-    }
+
+        in.close();
+
+        // bigSorting(new String[]{"31415926535897932384626433832795", "1", "3", "10", "3", "5"});
+        // assert (bigSorting(new String[]{"31415926535897932384626433832795", "1", "3", "10", "3", "5"}) ==
+        //        new String[]{"31415926535897932384626433832795", "1", "3", "10", "3", "5"});
+    }*/
 }
 
