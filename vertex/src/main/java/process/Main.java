@@ -29,7 +29,14 @@ public class Main {
     public static final String s = "Нравится ли тебе Java? Очень нравится? " +
             "Тогда посвящай Java, как можно больше времени, и днем, и ночью, и во сне :)";
 
+    static int sum (int a, int b){
+        return (b+a);
+    }
+
     public static void main(String[] args) {
+
+
+        System.out.println(sum(1,2));
 
     }
 
